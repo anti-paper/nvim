@@ -56,4 +56,5 @@ keymap("i", "[", "[]<LEFT>", opts)
 keymap("i", "(", "()<LEFT>", opts)
 keymap("i", "\"", "\"\"<LEFT>", opts)
 keymap("i", "'", "''<LEFT>", opts)
+keymap('n', '<S-e>', ':NvimTreeToggle<CR>', {silent=true})
 
