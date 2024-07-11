@@ -27,5 +27,8 @@ require('jetpack.paq') {
       'nvim-lualine/lualine.nvim',
       requires = 'kyazdani42/nvim-web-devicons'
     },
-    {'neoclide/coc.nvim', branch='release'},
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    'yamatsum/nvim-cursorline',
 }
