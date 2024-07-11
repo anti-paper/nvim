@@ -20,4 +20,15 @@ require('jetpack.paq') {
           'nvim-tree/nvim-web-devicons',
         }
     },
+    'nvim-lua/plenary.nvim',
+    {'nvim-telescope/telescope.nvim', tag = '0.1.4' },
+    'nvim-tree/nvim-web-devicons',
+    {
+      'nvim-lualine/lualine.nvim',
+      requires = 'kyazdani42/nvim-web-devicons'
+    },
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    'yamatsum/nvim-cursorline',
 }
