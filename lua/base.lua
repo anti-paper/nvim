@@ -39,6 +39,8 @@ opt.helplang = ja
 -- start end set strong
 opt.showmatch = true
 
+-- set leader
+vim.g.mapleader = " "
 
 -- key bind
 local opts = {noremap = true, silent = true}

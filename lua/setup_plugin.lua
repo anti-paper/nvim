@@ -31,4 +31,9 @@ require('jetpack.paq') {
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     'yamatsum/nvim-cursorline',
+    'pechorin/any-jump.vim',
+    {'numToStr/Comment.nvim', config = function() require('Comment').setup() end},
+    'norcalli/nvim-colorizer.lua',
+    'dinhhuy258/git.nvim',
+    'lewis6991/gitsigns.nvim',
 }
