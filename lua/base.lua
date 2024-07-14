@@ -39,6 +39,8 @@ opt.helplang = ja
 -- start end set strong
 opt.showmatch = true
 
+-- set leader
+vim.g.mapleader = " "
 
 -- key bind
 local opts = {noremap = true, silent = true}
@@ -57,4 +59,7 @@ keymap("i", "(", "()<LEFT>", opts)
 keymap("i", "\"", "\"\"<LEFT>", opts)
 keymap("i", "'", "''<LEFT>", opts)
 keymap('n', '<S-e>', ':NvimTreeToggle<CR>', {silent=true})
+keymap('n', '<leader>aw', 'ciw""<Esc>P', opts)
+keymap('n', '<leader>aW', "ciw''<Esc>P", opts)
+keymap('n', '<C-t>', ':ToggleTerm<CR>', opts)
 
