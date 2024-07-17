@@ -14,3 +14,4 @@ local lazygit = Terminal:new({
 function lazygit_toggle()
 	lazygit:toggle()
 end
+

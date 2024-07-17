@@ -7,9 +7,10 @@ require('nvim-tree').setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+    git_ignored = false,
   },
 })
 
 -- start neovim with open nvim-tree
 require("nvim-tree.api").tree.toggle(false, true)
+
