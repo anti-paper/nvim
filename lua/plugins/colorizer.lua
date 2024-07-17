@@ -4,3 +4,4 @@ require'colorizer'.setup(config, {
   rgb_fn = true;
   hsl_fn = true;
 })
+

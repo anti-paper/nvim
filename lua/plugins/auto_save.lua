@@ -3,3 +3,4 @@ require'auto-save'.setup({
   --, "ModeChanged" これを有効にすると、ノーマルモード時のSが効かなくなる
   --{"InsertLeave", "TextChanged"},
 })
+

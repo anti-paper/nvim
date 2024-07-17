@@ -11,3 +11,4 @@ require('nvim-cursorline').setup {
     hl = { underline = true },
   }
 }
+

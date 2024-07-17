@@ -44,3 +44,4 @@ require('jetpack.paq') {
     'echasnovski/mini.indentscope',
     'akinsho/toggleterm.nvim',
 }
+
