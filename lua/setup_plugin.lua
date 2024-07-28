@@ -29,6 +29,13 @@ require('jetpack.paq') {
     },
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-path",
+    "hrsh7th/vim-vsnip",
+    "hrsh7th/cmp-vsnip",
+    "onsails/lspkind.nvim",
     "neovim/nvim-lspconfig",
     'yamatsum/nvim-cursorline',
     'pechorin/any-jump.vim',
@@ -43,5 +50,9 @@ require('jetpack.paq') {
     'RRethy/nvim-treesitter-endwise',
     'echasnovski/mini.indentscope',
     'akinsho/toggleterm.nvim',
+    {
+      'nvimtools/none-ls.nvim',
+      requires = {'nvim-lua/plenary.nvim', 'vim-test/vim-test'},
+    },
 }
 
