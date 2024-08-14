@@ -3,6 +3,14 @@ require('setup_plugin')
 require('plugins/colorscheme')
 require('plugins/nvim_tree')
 require('telescope').setup {
+    defaults = {
+        file_ignore_patterns = {
+            "node_modules",
+            "vendor",
+            ".git",
+            "build",
+        }
+    },
     pickers = {
         find_files = {
             find_command = { 'rg', '--files', '--hidden', '-g', '!.git' },
