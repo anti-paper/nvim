@@ -43,7 +43,7 @@ opt.showmatch = true
 vim.g.mapleader = " "
 
 -- key bind
-local opts = {noremap = true, silent = true}
+local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -56,10 +56,10 @@ keymap("i", "っj", "<Esc>", opts)
 keymap("i", "{", "{}<LEFT>", opts)
 keymap("i", "[", "[]<LEFT>", opts)
 keymap("i", "(", "()<LEFT>", opts)
-keymap("i", "\"", "\"\"<LEFT>", opts)
+keymap("i", '"', '""<LEFT>', opts)
 keymap("i", "'", "''<LEFT>", opts)
-keymap('n', '<S-e>', ':NvimTreeToggle<CR>', {silent=true})
+keymap('n', '<S-e>', ':NvimTreeToggle<CR>', { silent = true })
 keymap('n', '<leader>aw', 'ciw""<Esc>P', opts)
 keymap('n', '<leader>aW', "ciw''<Esc>P", opts)
-keymap('n', '<C-t>', ':ToggleTerm<CR>', opts)
-
+keymap('n', '<C-t>', ':vs<CR><C-w>l:terminal<CR>', opts)
+keymap('n', '<leader>r', ':RainbowQuery<CR>', opts)
