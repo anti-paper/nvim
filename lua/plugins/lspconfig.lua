@@ -1,7 +1,7 @@
 local on_attach = function(client, bufnr)
     -- LSPが持つフォーマット機能を無効化する
     -- →例えばtsserverはデフォルトでフォーマット機能を提供しますが、利用したくない場合はコメントアウトを解除してください
-    --client.server_capabilities.documentFormattingProvider = false
+    client.server_capabilities.documentFormattingProvider = false
 
     -- 下記ではデフォルトのキーバインドを設定しています
     -- ほかのLSPプラグインを使う場合（例：Lspsaga）は必要ないこともあります
@@ -43,6 +43,14 @@ require("mason-lspconfig").setup_handlers {
         }
     end,
 }
+
+local null_ls = require('null-ls')
+null_ls.setup({
+    sources = {
+        null_ls.builtins.formatting.phpcsfixer,
+        null_ls.builtins.formatting.prettier,
+    }
+})
 
 vim.api.nvim_create_autocmd("BufWritePre", {
     group = augroup,
