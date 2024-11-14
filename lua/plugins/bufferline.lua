@@ -1,34 +1,35 @@
-require'bufferline'.setup({
-  options = {
-    -- mode = "tabs",
-    separator_style = 'thick',
-    -- separator_style = 'slant',
-    -- always_show_bufferline = false,
-    show_buffer_close_icons = true,
-    show_close_icon = true,
-    color_icons = true,
-  },
-  highlights = {
-    separator = {
-      fg = '#073642',
-      bg = '#000000',
+require 'bufferline'.setup({
+    options = {
+        -- mode = "tabs",
+        separator_style = 'thick',
+        -- separator_style = 'slant',
+        -- always_show_bufferline = false,
+        show_buffer_close_icons = true,
+        show_close_icon = true,
+        color_icons = true,
     },
-    background = {
-      fg = '#657b83',
-      bg = '#444444'
+    highlights = {
+        separator = {
+            fg = '#073642',
+            bg = '#000000',
+        },
+        background = {
+            fg = '#657b83',
+            bg = '#444444'
+        },
+        buffer_selected = {
+            fg = '#ffffff',
+            bg = '#000000',
+            bold = true,
+        },
+        fill = {
+            bg = '#073642'
+        }
     },
-    buffer_selected = {
-      fg = '#ffffff',
-      bg = '#000000',
-      bold = true,
-    },
-    fill = {
-      bg = '#073642'
-    }
-  },
 })
 
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
 vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
 vim.keymap.set('n', '<C-p>', '<Cmd>BufferLinePickClose<CR>', {})
-
+vim.keymap.set('n', '<C-i>', '<Cmd>BufferLineCloseRight<CR>', {})
+vim.keymap.set('n', '<C-S-i>', '<Cmd>BufferLineCloseLeft<CR>', {})
