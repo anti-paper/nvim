@@ -59,7 +59,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         vim.lsp.buf.format({
             async = false,
             filter = function (client)
-                return client.name ~= 'inteleohense'
+                return client.name ~= 'intelephense'
             end,
         })
     end,
