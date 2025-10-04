@@ -1,0 +1,8 @@
+#!/bin/bash
+BASE_DIR=$(pwd)
+# vim用設定
+ln -sf ${BASE_DIR}/.vimrc ~/.vimrc
+
+# neovim用設定
+mkdir -p ~/.config/nvim
+ln -sf ${BASE_DIR}/init.vim ~/.config/nvim/init.vim
