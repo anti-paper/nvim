@@ -13,3 +13,11 @@ set list
 
 " ヤンクした内容をクリップボードにも追加
 set clipboard+=unnamedplus
+
+" キーマップ
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap ` ``<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
