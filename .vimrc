@@ -21,3 +21,5 @@ inoremap ` ``<Left>
 inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
+
+source ~/.vim/formatter_auto_loader.vim

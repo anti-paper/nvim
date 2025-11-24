@@ -2,6 +2,8 @@
 BASE_DIR=$(pwd)
 # vim用設定
 ln -sf ${BASE_DIR}/.vimrc ~/.vimrc
+ln -sf ${BASE_DIR}/formatter_auto_loader.vim ~/.vim/formatter_auto_loader.vim
+ln -sf ${BASE_DIR}/formatter ~/.vim/formatter
 
 # neovim用設定
 mkdir -p ~/.config/nvim
