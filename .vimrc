@@ -28,7 +28,4 @@ set autochdir
 " netrwが使うディレクトリとVimのcwdを同期
 let g:netrw_keepdir = 0
 
-" ウィンドウごとの cwd ブレ防止
-set globaldir
-
 source ~/.vim/formatter_auto_loader.vim
