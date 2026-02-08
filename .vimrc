@@ -22,4 +22,10 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
 
+" netrw上でディレクトリ自動追尾
+set autochdir
+
+" netrwが使うディレクトリとVimのcwdを同期
+let g:netrw_keepdir = 0
+
 source ~/.vim/formatter_auto_loader.vim
