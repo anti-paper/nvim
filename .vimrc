@@ -22,8 +22,8 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
 
-" netrw上でディレクトリ自動追尾
-set autochdir
+" netrw上でディレクトリ自動追尾 (vimgrep干渉防止のためautocmdに変更)
+autocmd FileType netrw setlocal autochdir
 
 " netrwが使うディレクトリとVimのcwdを同期
 let g:netrw_keepdir = 0
